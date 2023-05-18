@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narutopédia!</title>
+</head>
+<body>
+    <div id="site">
+        <h1>Formulário Para Suporte!</h1>
+        <form action="https://www.botecodigital.dev.br/web/processar.php" method="POST">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Ex. Arthur">
+            </div>
+                <div>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Ex. Rosset">
+
+            <div>
+                <label for="Idade"> Idade:</label>
+                <input type="number" min="0" max="110" id="idade" placeholder="Ex. 19">
+            </div>    
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" required name="email" id="email" placeholder="rossetarthur2004@gmail.com">
+            </div>
+            <div>
+                <label for="cidade">Cidade</label>
+                <select name="cidade" id="cidade">
+                    <option value="URU">Uruguaiana</option>
+                    <option value="POA">Porto Alegre</option>
+                    <option value="PEL">Pelotas</option>
+                    <option value="CAX">Caxias do Sul</option>
+                    <option value="QUA">Quaraí</option>
+                    <option value="IJU">Ijuí</option>
+                    <option value="ITA">Itaqui</option>
+                </select>
+                <div>
+                    <label for="horario">Horário de envio:</label>
+                    <input type="number" id="hora" placeholder="Ex. 12:00">                        
+                    </select>
+
+                </div>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="sexo-m" value="Masculino">
+                    <label for="sexo-m">Masculino</label>
+                    <br>
+                    <input type="radio" name="sexo" id="sexo-f" value="Feminino">
+                    <label for="sexo-f">Feminino</label>
+
+                    <br>
+                    <input checked type="radio" name="sexo" id="sexo-nao-infor" value="Não Informado">
+                    <label for="sexo-nao-infor">Prefiro não informar</label>
+                    <div>
+                        <label for="mensagem">Sua dúvida:</label>
+                        <textarea cols="60" rows="6" name="mensagem" id="mensagem">mensagem</textarea>
+                    </div>
+                    
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+                    
+                    
+                </fieldset>
+            
+            
+            </div>     
+</body>
+</html>
